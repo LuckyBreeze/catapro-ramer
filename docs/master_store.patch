@@ -1,0 +1,11 @@
+--- original/runtime/master_store.py
++++ ramer/runtime/master_store.py
+@@ -60,7 +60,7 @@
+                 labels, np.log10(raw), atol=1e-12, rtol=0):
+             raise RuntimeError('log10 label audit failed: expected log10(raw kcat) exactly once')
+         if self.manifest.get('feature_blocks') != [
+-                {'name': 'ProtT5', 'width': 1024},
++                {'name': 'RAMER', 'width': 1024},
+                 {'name': 'MolT5', 'width': 768},
+                 {'name': 'MACCS', 'width': 167}]:
+             raise RuntimeError('Feature order/dimensions are not approved')

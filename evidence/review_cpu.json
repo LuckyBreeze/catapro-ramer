@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "source_check": {
+    "copied_files": 10,
+    "deployed_files": 17,
+    "runner_unchanged": true,
+    "model_utils_unchanged": true,
+    "sole_reader_change": "protein block identity ProtT5 to RAMER"
+  },
+  "rows": {
+    "train": 21585,
+    "valid": 3037,
+    "test": 3036
+  },
+  "parameters": 506113,
+  "initial_state_sha256": "76b98922a28e1155a26a2579a3f94051559f37f124d94d791f69ef7240f87498",
+  "original_model_initial_exact": true,
+  "original_two_batch_updates_exact": true,
+  "bn_updates_per_module": 2,
+  "gradient_finite": true,
+  "model_adam_roundtrip_exact": true,
+  "train_coverage_exact": true,
+  "tail_batch_size": 9,
+  "selection_rule_checked": true,
+  "pooled_mask_reference_checked": true,
+  "substrate_exact": true,
+  "test_forward": false,
+  "discarded_review_updates": true,
+  "torch_version": "2.8.0+cu128",
+  "numpy_version": "1.23.5",
+  "gpu": null
+}

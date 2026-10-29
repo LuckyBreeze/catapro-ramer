@@ -1,0 +1,35 @@
+{
+  "hf_revision": "4bc32f7b9fb5d686717c3e7e1462d691efcc59c5",
+  "files": {
+    "model/ProtT5/config.json": {
+      "bytes": 546,
+      "sha256": null,
+      "git_blob_sha1": "e6a4b7706b1008f2596ec0f94b22476232c44717"
+    },
+    "model/ProtT5/pytorch_model.bin": {
+      "bytes": 11275562724,
+      "sha256": "d5d16b2fe649a03328954d82600295a7aedc7fa20d08c0bbbfe0221ef855728f",
+      "git_blob_sha1": null
+    },
+    "model/ProtT5/special_tokens_map.json": {
+      "bytes": 1786,
+      "sha256": null,
+      "git_blob_sha1": "881bdbffc06e471924ecea57f962bc5f8e2a9f21"
+    },
+    "model/ProtT5/spiece.model": {
+      "bytes": 237990,
+      "sha256": "74da7b4afcde53faa570114b530c726135bdfcdb813dec3abfb27f9d44db7324",
+      "git_blob_sha1": null
+    },
+    "model/ProtT5/tokenizer_config.json": {
+      "bytes": 24,
+      "sha256": null,
+      "git_blob_sha1": "57f1746bbcd1842e6a2a4d8c948d309e8d09ecde"
+    },
+    "model/RAMER.pth": {
+      "bytes": 4847580817,
+      "sha256": "40c966edfb1b9b00631a4782129c70afe9ada88c7140acd24cb3a82e191a7dc9",
+      "git_blob_sha1": null
+    }
+  }
+}

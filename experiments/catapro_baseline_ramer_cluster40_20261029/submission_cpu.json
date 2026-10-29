@@ -1,0 +1,9 @@
+{
+  "job_id": "3183967",
+  "kind": "cpu",
+  "script": "prepare.sbatch",
+  "utc": "2026-10-29T02:35:17.280753+00:00",
+  "stdout": "3183967\n",
+  "stderr": "",
+  "squeue": "             JOBID  PARTITION      STATE         TIME NODELIST(REASON)\n           3183967      intel    PENDING         0:00 (Priority)\n"
+}

@@ -1,0 +1,86 @@
+{
+  "protocol": "CataPro new cluster40; log10(kcat s^-1); training terminal8+1 merged9; validation unchanged",
+  "test_policy": "test is evaluated only after validation checkpoint selection",
+  "architecture": "unmodified CataPro training/kcat/model.py::KcatModel",
+  "loss_and_training_functions": "unmodified CataPro training/kcat/utils.py",
+  "parameters": {
+    "seed": 668,
+    "batch_size": 8,
+    "lr": 1e-05,
+    "drop_rate": 0.0,
+    "max_epochs": 150,
+    "early_stopping": true,
+    "patience": 20,
+    "min_delta": 0.001,
+    "optimizer": "Adam(betas=(0.9,0.999), weight_decay=0.01)",
+    "checkpoint_selection": "minimum validation batch-average RMSELoss under original EarlyStopping.check",
+    "num_workers": 8,
+    "device": "cuda:0"
+  },
+  "source_sha256": {
+    "model.py": "ad25f4136e60ed31edd0ad75b5dcc5b55da686ffad9ce89e657902587b5f41f5",
+    "utils.py": "1c5dfb08259a90eee896ec9ca1b3fcbb8dfe641b53e85f750b64f7ddaeaa762d",
+    "runner": "649aeda8175878dcc51df2da3ea5460032c803699098e53d1eb4ade7f1078193"
+  },
+  "inputs": {
+    "train": {
+      "rows": 21585,
+      "feature_columns": 1960,
+      "feature_sha256": "a02bb6922764e6a61c47ae45cfb7a01b90ab8cad08e5a126f44dbcdbafd0762a",
+      "metadata_sha256": "a0f15c13c715006513040387a5de600fdffc42481af5830277e683d5a6dc1710",
+      "feature_manifest_sha256": "49147e87b4d5eaf85ef0cc01e2aab984da646b3e43d0030cef0dd29b51ef83c6",
+      "rowspec_sha256": "e92f55cd7881a2a6615ebabf189bd421ced3e448a357881024501813e97667bc",
+      "first_row_uid": "kcat_0",
+      "last_row_uid": "kcat_27660"
+    },
+    "valid": {
+      "rows": 3037,
+      "feature_columns": 1960,
+      "feature_sha256": "a02bb6922764e6a61c47ae45cfb7a01b90ab8cad08e5a126f44dbcdbafd0762a",
+      "metadata_sha256": "a0f15c13c715006513040387a5de600fdffc42481af5830277e683d5a6dc1710",
+      "feature_manifest_sha256": "49147e87b4d5eaf85ef0cc01e2aab984da646b3e43d0030cef0dd29b51ef83c6",
+      "rowspec_sha256": "e92f55cd7881a2a6615ebabf189bd421ced3e448a357881024501813e97667bc",
+      "first_row_uid": "kcat_3",
+      "last_row_uid": "kcat_27550"
+    },
+    "test": {
+      "rows": 3036,
+      "feature_columns": 1960,
+      "feature_sha256": "a02bb6922764e6a61c47ae45cfb7a01b90ab8cad08e5a126f44dbcdbafd0762a",
+      "metadata_sha256": "a0f15c13c715006513040387a5de600fdffc42481af5830277e683d5a6dc1710",
+      "feature_manifest_sha256": "49147e87b4d5eaf85ef0cc01e2aab984da646b3e43d0030cef0dd29b51ef83c6",
+      "rowspec_sha256": "e92f55cd7881a2a6615ebabf189bd421ced3e448a357881024501813e97667bc",
+      "first_row_uid": "kcat_128",
+      "last_row_uid": "kcat_27593"
+    }
+  },
+  "best_epoch_zero_based": 7,
+  "epochs_ran": 28,
+  "early_stopping_triggered": true,
+  "strict_load_missing_keys": [],
+  "strict_load_unexpected_keys": [],
+  "results": {
+    "valid": {
+      "rows": 3037,
+      "metrics": {
+        "RMSE": 1.2699322700500488,
+        "MAE": 0.968890368938446,
+        "R2": 0.2888837456703186,
+        "PCC": 0.5385667681694031,
+        "SCC": 0.49196852189394946
+      },
+      "reported_batch_average_RMSELoss": 1.1198819260259991
+    },
+    "test": {
+      "rows": 3036,
+      "metrics": {
+        "RMSE": 1.3117482662200928,
+        "MAE": 0.9935590624809265,
+        "R2": 0.24677157402038574,
+        "PCC": 0.5103985667228699,
+        "SCC": 0.49074729940818235
+      },
+      "reported_batch_average_RMSELoss": 1.143535063494193
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "best_epoch": 8,
+  "completed_epochs": 28,
+  "metrics": {
+    "valid": {
+      "RMSE": 1.2699323024612865,
+      "MAE": 0.9688903451036783,
+      "R2": 0.28888373104608334,
+      "PCC": 0.538566777307963
+    },
+    "test": {
+      "RMSE": 1.3117483131390044,
+      "MAE": 0.9935590484332958,
+      "R2": 0.24677150117818447,
+      "PCC": 0.5103985760144116
+    }
+  },
+  "selected_valid_metrics_replayed": true,
+  "test_rows": 3036,
+  "checkpoint_sha256": "cb6cdd43590f137999bfcfabcd7f593ba9ae5f4e38d262bd92afa1a9fd6ea207",
+  "prediction_sha256": {
+    "valid": "b5ed40ebc5b619ccd2e8c70848c296da0c01ca47aa0f33c486a58bf339adc15a",
+    "test": "591f13dac8b380389be2abc9c04b50fad343027799a15f25f8f8e3fb0e5c52c6"
+  },
+  "scope": "Original baseline evaluation procedure; valid metrics checked against selected history; no saved per-value training valid reference in original runner"
+}

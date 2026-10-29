@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "downloaded_files": 16,
+  "frozen_sources_verified": 17,
+  "best_epoch": 8,
+  "epochs": 28,
+  "metrics": {
+    "valid": {
+      "RMSE": 1.2699323024612865,
+      "MAE": 0.9688903451036783,
+      "R2": 0.28888373104608334,
+      "PCC": 0.5385667773079624,
+      "batch_RMSELoss": 1.1198819319075308
+    },
+    "test": {
+      "RMSE": 1.3117483131390046,
+      "MAE": 0.9935590484332958,
+      "R2": 0.24677150117818436,
+      "PCC": 0.5103985760144124,
+      "batch_RMSELoss": 1.1435350700278368
+    }
+  },
+  "baseline_test": {
+    "RMSE": 1.2564906121970154,
+    "MAE": 0.9597277241203342,
+    "R2": 0.30889472005682583,
+    "PCC": 0.560340975737143,
+    "batch_RMSELoss": 1.0963457425141583
+  },
+  "delta_RMSE": 0.05525770094198923,
+  "relative_RMSE_increase_percent": 4.397780644406835,
+  "checkpoint_sha256": "cb6cdd43590f137999bfcfabcd7f593ba9ae5f4e38d262bd92afa1a9fd6ea207",
+  "test_rows": 3036,
+  "scope": "Independent saved-prediction arithmetic; no checkpoint load or new inference; selected valid aggregate metrics agree with history"
+}

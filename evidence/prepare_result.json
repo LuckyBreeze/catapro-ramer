@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "rows": 27658,
+  "unique_proteins": 13192,
+  "all_cache_sha_verified": true,
+  "unchanged_substrate_columns": 935,
+  "substrate_exact": true,
+  "labels_unchanged": true,
+  "pooled_reference_max_abs_difference": 4.4379927011117815e-08,
+  "feature_sha256": "a02bb6922764e6a61c47ae45cfb7a01b90ab8cad08e5a126f44dbcdbafd0762a",
+  "feature_manifest_sha256": "49147e87b4d5eaf85ef0cc01e2aab984da646b3e43d0030cef0dd29b51ef83c6",
+  "cache_manifest_sha256": "2ccc424a22c0315e67318a1175edad53ef45ec497e3cf4bf5372224aaf01caa3",
+  "old_input_sha256": {
+    "inputs/feature_store.json": "d489a8702bd58da9af8e117da88f9ab2e18a1806af218290774eb9ad43860d8d",
+    "inputs/rowspec.json": "e92f55cd7881a2a6615ebabf189bd421ced3e448a357881024501813e97667bc",
+    "inputs/rows.csv": "a0f15c13c715006513040387a5de600fdffc42481af5830277e683d5a6dc1710",
+    "inputs/feature1959.npy": "18ca9ea49e78b338e6d64040874c2048b4fde07457a595fd77114fd91baaba86",
+    "assignments.csv": "721cc57c15ea1e87ea289118868f9d5b9007a9aaa213e45a4d76844e13d08138"
+  }
+}

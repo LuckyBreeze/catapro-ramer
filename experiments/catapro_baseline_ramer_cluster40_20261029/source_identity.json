@@ -1,0 +1,52 @@
+{
+  "catapro_baseline/runner.py": {
+    "source": "C:\\Users\\khl\\Documents\\Kcatpredict\\work\\catapro_cluster40_six_seed668_20261025\\catapro_baseline\\runner.py",
+    "original_sha256": "649aeda8175878dcc51df2da3ea5460032c803699098e53d1eb4ade7f1078193",
+    "deployed_sha256": "649aeda8175878dcc51df2da3ea5460032c803699098e53d1eb4ade7f1078193"
+  },
+  "catapro_baseline/tail_batch.py": {
+    "source": "C:\\Users\\khl\\Documents\\Kcatpredict\\work\\catapro_cluster40_six_seed668_20261025\\catapro_baseline\\tail_batch.py",
+    "original_sha256": "1506f0e8e721ea147a0aeebe2e4347995a90f0020e43cfb0b9e84b513b92c696",
+    "deployed_sha256": "1506f0e8e721ea147a0aeebe2e4347995a90f0020e43cfb0b9e84b513b92c696"
+  },
+  "runtime/master_store.py": {
+    "source": "C:\\Users\\khl\\Documents\\Kcatpredict\\work\\catapro_cluster40_six_seed668_20261025\\runtime\\master_store.py",
+    "original_sha256": "b52ba409345f28eb1d1cff1c5f1a4a0c765582076b9d48b1b66af46f2f428d9f",
+    "deployed_sha256": "619930db1e2890cf30d3e35e5ba534512a4b9f91feee19975fbc26b5c135920d"
+  },
+  "runtime/support.py": {
+    "source": "C:\\Users\\khl\\Documents\\Kcatpredict\\work\\catapro_cluster40_six_seed668_20261025\\runtime\\support.py",
+    "original_sha256": "1145bdd458711df803dfd7c65d482f04529ae446af43caf097e5fd79f02ca640",
+    "deployed_sha256": "1145bdd458711df803dfd7c65d482f04529ae446af43caf097e5fd79f02ca640"
+  },
+  "runtime/residue_cache.py": {
+    "source": "C:\\Users\\khl\\Documents\\Kcatpredict\\work\\catapro_cluster40_six_seed668_20261025\\runtime\\residue_cache.py",
+    "original_sha256": "f5f9e70c04aeb89537eea60b295cb2114daeb7101f9c609465734938031d2d8b",
+    "deployed_sha256": "f5f9e70c04aeb89537eea60b295cb2114daeb7101f9c609465734938031d2d8b"
+  },
+  "author/training/kcat/model.py": {
+    "source": "C:\\Users\\khl\\Documents\\Kcatpredict\\work\\catapro_dataset_feasibility_20261024\\training\\kcat\\model.py",
+    "original_sha256": "ad25f4136e60ed31edd0ad75b5dcc5b55da686ffad9ce89e657902587b5f41f5",
+    "deployed_sha256": "ad25f4136e60ed31edd0ad75b5dcc5b55da686ffad9ce89e657902587b5f41f5"
+  },
+  "author/training/kcat/utils.py": {
+    "source": "C:\\Users\\khl\\Documents\\Kcatpredict\\work\\catapro_dataset_feasibility_20261024\\training\\kcat\\utils.py",
+    "original_sha256": "1c5dfb08259a90eee896ec9ca1b3fcbb8dfe641b53e85f750b64f7ddaeaa762d",
+    "deployed_sha256": "1c5dfb08259a90eee896ec9ca1b3fcbb8dfe641b53e85f750b64f7ddaeaa762d"
+  },
+  "assignments.csv": {
+    "source": "C:\\Users\\khl\\Documents\\Kcatpredict\\work\\catapro_cluster40_six_seed668_20261025\\assignments.csv",
+    "original_sha256": "721cc57c15ea1e87ea289118868f9d5b9007a9aaa213e45a4d76844e13d08138",
+    "deployed_sha256": "721cc57c15ea1e87ea289118868f9d5b9007a9aaa213e45a4d76844e13d08138"
+  },
+  "inputs/rowspec.json": {
+    "source": "C:\\Users\\khl\\Documents\\Kcatpredict\\work\\catapro_cluster40_six_seed668_20261025\\rowspec.json",
+    "original_sha256": "e92f55cd7881a2a6615ebabf189bd421ced3e448a357881024501813e97667bc",
+    "deployed_sha256": "e92f55cd7881a2a6615ebabf189bd421ced3e448a357881024501813e97667bc"
+  },
+  "reference_protocol.json": {
+    "source": "C:\\Users\\khl\\Documents\\Kcatpredict\\work\\catapro_cluster40_six_seed668_20261025\\evidence\\u17015\\catapro_baseline\\run_seed668\\protocol.json",
+    "original_sha256": "bd9f1b88efa9467879729375afe17485419e44d69782bd0fa7b3f551d285f74d",
+    "deployed_sha256": "bd9f1b88efa9467879729375afe17485419e44d69782bd0fa7b3f551d285f74d"
+  }
+}

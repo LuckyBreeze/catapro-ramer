@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "source_identity_passed": true,
+  "runner_author_model_utils_exact": true,
+  "python_syntax_passed": true,
+  "pool_reference_and_invalid_inputs_passed": true,
+  "original_cropping_passed": true,
+  "sbatch_lf_passed": true,
+  "scope": "Local short CPU/structural checks; full source/input/cache and model runtime checks reserved for sbatch"
+}

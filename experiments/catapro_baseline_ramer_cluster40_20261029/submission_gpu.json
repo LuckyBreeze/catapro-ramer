@@ -1,0 +1,9 @@
+{
+  "job_id": "3184180",
+  "kind": "gpu",
+  "script": "train.sbatch",
+  "utc": "2026-10-29T02:55:08.415045+00:00",
+  "stdout": "3184180\n",
+  "stderr": "",
+  "squeue": "             JOBID  PARTITION      STATE         TIME NODELIST(REASON)\n           3184180        L40    PENDING         0:00 (Priority)\n"
+}

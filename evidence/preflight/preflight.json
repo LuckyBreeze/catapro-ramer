@@ -1,0 +1,22 @@
+{
+  "state": "preflight_complete",
+  "tail_batch_rows": 9,
+  "model_optimizer_finite": true,
+  "test_evaluated": false,
+  "train_batch_rows": 8,
+  "valid_batch_rows": 8,
+  "train_batch_metrics": {
+    "PCC": 0.25436341762542725,
+    "SCC": 0.10539215686274511,
+    "R2": -0.1768932342529297,
+    "RMSE": 1.6036723852157593,
+    "batch_average_RMSELoss": 1.5040322244167328
+  },
+  "valid_batch_metrics": {
+    "PCC": -0.07602927088737488,
+    "SCC": -0.5,
+    "R2": -1.390596866607666,
+    "RMSE": 1.907250165939331,
+    "batch_average_RMSELoss": 1.9072504043579102
+  }
+}

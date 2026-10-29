@@ -1,0 +1,27 @@
+{
+  "base_local": "C:\\Users\\khl\\Documents\\Kcatpredict\\work\\catapro_residue_query_model2_20261027",
+  "base_remote": "/share/home/u17015/data/GraphKcat/catapro_residue_query_model2_20261027",
+  "new_remote": "/share/home/u17015/data/GraphKcat/catapro_model2_ramer_cluster40_20261028",
+  "copied_unchanged": {
+    "model.py": "8ce826d29d025c13d97d53312895f92c6bf71cd3089d8cfd3bc0053c6500dbb9",
+    "author_utils.py": "1c5dfb08259a90eee896ec9ca1b3fcbb8dfe641b53e85f750b64f7ddaeaa762d",
+    "tail_batch.py": "1506f0e8e721ea147a0aeebe2e4347995a90f0020e43cfb0b9e84b513b92c696",
+    "prepare.py": "c1825a127271c54595451c52ded17d3fb8757fff2116fdd90846e0ef9c95e32d",
+    "extract_tokens.py": "fc26dfd290588233f491bc569f479a7709a56b74db0633b345556f2803fe6474",
+    "checkpoints.json": "176a52f9c9a7325adf72786dcc820e8bf3e1cb9dfc844837d2d31b8d21deb432",
+    "test_model.py": "d7dec338b8d145031f8810a98557b2183184b99fcbdc43b92ca7a0071b1081fb",
+    "test_extract_tokens.py": "0dc727d7cad37b2aa9cdc0fa4fdcf4c2484dd8d970584456e000498555c8664c",
+    "test_train.py": "440642ba76ff6d001ceea499fcd50f835e565dcf5b627630868891a9566bb810"
+  },
+  "old_data_sha256": "319d67bc8ad16b4f9ed2e99ef3c7ea4012cadd7b34d1aa7dfe6fecb137c16935",
+  "old_train_sha256": "56225329f29c6e33924c207a549aff71bc55321a232d696784705513501017b3",
+  "old_inputs": {
+    "prepared_manifest": "f117d03966332477889e012cc5d6cec8f6b44ad4ef7430b5b669f1f779af2123",
+    "prepared_rows": "460b5018f3c53024f1f1cd8a2a89493c48d35c71add023a9458877ed3fa3669b",
+    "prepared_maccs": "93055c3a5ecd6b66b910a3f83cb82b70739a4279a317fddc5da4de754ba76865",
+    "protein_manifest": "520393399d85152a28bd54270385d25c8fea72d8f776cc11a1d692d4c15f6fd4",
+    "molt5_manifest": "71e055cb4deb20bbf51cbdf6c8f37c3dad0a9daf764b5a6aa90a25c4ddf771e9"
+  },
+  "old_formal_initial_sha256": "c03a089997a470ceca03e70261cf3f9e1d2157afa49dc990182e64460115ca93",
+  "old_deployment_manifest_sha256": "794c88c35580f9df0b7129fe1d672b21911392bdaf2c12e5ce5fc824ba6263d5"
+}

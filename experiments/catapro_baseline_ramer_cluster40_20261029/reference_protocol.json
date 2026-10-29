@@ -1,0 +1,57 @@
+{
+  "protocol": "CataPro new cluster40; log10(kcat s^-1); training terminal8+1 merged9; validation unchanged",
+  "test_policy": "test is evaluated only after validation checkpoint selection",
+  "architecture": "unmodified CataPro training/kcat/model.py::KcatModel",
+  "loss_and_training_functions": "unmodified CataPro training/kcat/utils.py",
+  "parameters": {
+    "seed": 668,
+    "batch_size": 8,
+    "lr": 1e-05,
+    "drop_rate": 0.0,
+    "max_epochs": 150,
+    "early_stopping": true,
+    "patience": 20,
+    "min_delta": 0.001,
+    "optimizer": "Adam(betas=(0.9,0.999), weight_decay=0.01)",
+    "checkpoint_selection": "minimum validation batch-average RMSELoss under original EarlyStopping.check",
+    "num_workers": 8,
+    "device": "cuda:0"
+  },
+  "source_sha256": {
+    "model.py": "ad25f4136e60ed31edd0ad75b5dcc5b55da686ffad9ce89e657902587b5f41f5",
+    "utils.py": "1c5dfb08259a90eee896ec9ca1b3fcbb8dfe641b53e85f750b64f7ddaeaa762d",
+    "runner": "649aeda8175878dcc51df2da3ea5460032c803699098e53d1eb4ade7f1078193"
+  },
+  "inputs": {
+    "train": {
+      "rows": 21585,
+      "feature_columns": 1960,
+      "feature_sha256": "18ca9ea49e78b338e6d64040874c2048b4fde07457a595fd77114fd91baaba86",
+      "metadata_sha256": "a0f15c13c715006513040387a5de600fdffc42481af5830277e683d5a6dc1710",
+      "feature_manifest_sha256": "d489a8702bd58da9af8e117da88f9ab2e18a1806af218290774eb9ad43860d8d",
+      "rowspec_sha256": "e92f55cd7881a2a6615ebabf189bd421ced3e448a357881024501813e97667bc",
+      "first_row_uid": "kcat_0",
+      "last_row_uid": "kcat_27660"
+    },
+    "valid": {
+      "rows": 3037,
+      "feature_columns": 1960,
+      "feature_sha256": "18ca9ea49e78b338e6d64040874c2048b4fde07457a595fd77114fd91baaba86",
+      "metadata_sha256": "a0f15c13c715006513040387a5de600fdffc42481af5830277e683d5a6dc1710",
+      "feature_manifest_sha256": "d489a8702bd58da9af8e117da88f9ab2e18a1806af218290774eb9ad43860d8d",
+      "rowspec_sha256": "e92f55cd7881a2a6615ebabf189bd421ced3e448a357881024501813e97667bc",
+      "first_row_uid": "kcat_3",
+      "last_row_uid": "kcat_27550"
+    },
+    "test": {
+      "rows": 3036,
+      "feature_columns": 1960,
+      "feature_sha256": "18ca9ea49e78b338e6d64040874c2048b4fde07457a595fd77114fd91baaba86",
+      "metadata_sha256": "a0f15c13c715006513040387a5de600fdffc42481af5830277e683d5a6dc1710",
+      "feature_manifest_sha256": "d489a8702bd58da9af8e117da88f9ab2e18a1806af218290774eb9ad43860d8d",
+      "rowspec_sha256": "e92f55cd7881a2a6615ebabf189bd421ced3e448a357881024501813e97667bc",
+      "first_row_uid": "kcat_128",
+      "last_row_uid": "kcat_27593"
+    }
+  }
+}

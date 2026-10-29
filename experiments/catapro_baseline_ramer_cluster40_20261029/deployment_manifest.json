@@ -1,0 +1,19 @@
+{
+  "assignments.csv": "721cc57c15ea1e87ea289118868f9d5b9007a9aaa213e45a4d76844e13d08138",
+  "author/training/kcat/model.py": "ad25f4136e60ed31edd0ad75b5dcc5b55da686ffad9ce89e657902587b5f41f5",
+  "author/training/kcat/utils.py": "1c5dfb08259a90eee896ec9ca1b3fcbb8dfe641b53e85f750b64f7ddaeaa762d",
+  "catapro_baseline/runner.py": "649aeda8175878dcc51df2da3ea5460032c803699098e53d1eb4ade7f1078193",
+  "catapro_baseline/tail_batch.py": "1506f0e8e721ea147a0aeebe2e4347995a90f0020e43cfb0b9e84b513b92c696",
+  "inputs/rowspec.json": "e92f55cd7881a2a6615ebabf189bd421ced3e448a357881024501813e97667bc",
+  "local_checks.json": "624416465ebb235ff3972b0c8eb7541d179cdc5a1b7d5c9c8680384df3efb038",
+  "manage.py": "70c185f5b3dd0cddf688e923fb2559145eadff7251651e1e8dc74d3edae45ed5",
+  "prepare.sbatch": "9002f52c23063870a6c7e50c29feed033e26aceb1bee10036fa964f61a2e98d0",
+  "reference_protocol.json": "bd9f1b88efa9467879729375afe17485419e44d69782bd0fa7b3f551d285f74d",
+  "run_pipeline.py": "db46ebae1fc4aab7573e6ad67a78007c80c2c86ba1a59e753c0486f256023250",
+  "runtime/master_store.py": "619930db1e2890cf30d3e35e5ba534512a4b9f91feee19975fbc26b5c135920d",
+  "runtime/residue_cache.py": "f5f9e70c04aeb89537eea60b295cb2114daeb7101f9c609465734938031d2d8b",
+  "runtime/support.py": "1145bdd458711df803dfd7c65d482f04529ae446af43caf097e5fd79f02ca640",
+  "source_identity.json": "6ab69bdfd3763231afd1502e44c17df884ea9544b46464620cc01a647d53b959",
+  "train.sbatch": "6ccf54f8547f7deef497bbef06bfb44d79c3e18ccfd33fdd6879bb296ac9ea48",
+  "workflow.py": "c9275fb5285364571e41a105e8d1e2651287ca7c38ddfefaa99935b9d7ed8991"
+}

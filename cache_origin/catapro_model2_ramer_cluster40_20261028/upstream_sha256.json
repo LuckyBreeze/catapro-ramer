@@ -1,0 +1,11 @@
+{
+  "upstream/Data2seq/Data2seq.py": "a03fa48037457cacc4dcb627cb5813f4b91813de3cde967b443b08278c5be0cb",
+  "upstream/Data2seq/proteinT5_embedding.py": "9f28f0a750c3b8feebb0c4c48e5f3519a61042a1428a5f26d614d9e6efe43c46",
+  "upstream/Data2seq/reaction_molt5_position_embedding.py": "94cc849f203d6cc17c8cb76ede35d4e830a70c91643f5e0e5a8755f4aaae830f",
+  "upstream/Data2seq/structure_embedding.py": "eff6bf1e884878baec534b761733ecbb899d832dfa61f23c778dfad8915963c7",
+  "upstream/LICENSE": "3711f963c05d0be80d53e5923308a6dee31b203da23435c9cfb7c7b6e4dd5e19",
+  "upstream/ramer.yml": "ca69f71ad1e8d09f1ab1acc54033fa6f438082feda7a848e8a2dbddf0e683911",
+  "upstream/README.md": "ec24d2f4d724ecd24209882e3aa040c7a9840fed02c0abc9a2878bc2653144da",
+  "upstream/set1_get_RAMER_embedding.py": "95a287de5fd04d838e042b0447a064fe55d57eab63e83d3176519e78e7beb239",
+  "upstream/train.py": "5e6342828972a3bc8b8ed8b30dc6efdfd2991aab5a5e885249f2ed934eb65924"
+}
