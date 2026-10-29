@@ -32,6 +32,7 @@
 | `experiments/catapro_baseline_ramer_cluster40_20261029/` | 本次原CataPro＋RAMER完整冻结执行代码、划分ID及投递回执 |
 | `cache_origin/catapro_model2_ramer_cluster40_20261028/` | 本次复用的RAMER缓存的生成来源；完整44文件历史部署及成功的提取sbatch |
 | `evidence/` | 本次CPU/CUDA检查、28轮history、protocol、最终summary与审核结果 |
+| `datasets/cluster40_seed668/` | 实际使用的train/valid/test完整序列、SMILES与标签，按冻结rowspec顺序导出 |
 | `docs/` | 改动、运行边界、历史投递与最终结果说明 |
 | `third_party/` | CataPro与RAMER上游许可 |
 | `scripts/verify_archive.py` | 只用标准库检查归档完整性及Python语法，不进行训练 |
@@ -91,7 +92,9 @@ stderr里的workers8>7及torch.load兼容提示均为UserWarning，实际作业�
 
 ## 数据、权重和许可
 
-未包含：原序列/SMILES/标签表、embedding矩阵、逐残基NPY缓存、模型checkpoint、逐样本预测、SSH密钥或认证信息。包含固定划分ID和分箱信息、来源SHA以及聚合指标。
+已按用户要求上传本次实际使用的三份完整数据集：[train.csv](datasets/cluster40_seed668/train.csv)（21585条）、[valid.csv](datasets/cluster40_seed668/valid.csv)（3037条）、[test.csv](datasets/cluster40_seed668/test.csv)（3036条）。包含原序列、SMILES、原始kcat与log10标签，及split/cluster_id；原字段字符串与服务器实际输入逐字段核验一致。字段、预处理和导出说明见[数据集README](datasets/cluster40_seed668/README.md)。
+
+未包含：embedding矩阵、逐残基NPY缓存、模型checkpoint、逐样本预测、SSH密钥或认证信息。数据集CSV导出不修改原冻结运行代码或重新划分数据。
 
 - CataPro作者代码：[zchwang/CataPro](https://github.com/zchwang/CataPro)，保留[MIT许可](third_party/CataPro-LICENSE.txt)。
 - RAMER：[Ming-Ni-Group/RAMER](https://github.com/Ming-Ni-Group/RAMER)，固定commit `5f453a0f836b407c77ff666acb2f9dde7c595a30`，保留[CC BY-NC 4.0许可](third_party/RAMER-LICENSE.txt)。RAMER上游代码未修改。

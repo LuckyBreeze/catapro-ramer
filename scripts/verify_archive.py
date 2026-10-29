@@ -1,5 +1,6 @@
 """Offline archive integrity checks only; standard library, no model/data loading."""
 import ast
+import csv
 import hashlib
 import json
 from pathlib import Path
@@ -35,5 +36,29 @@ assert summary['parameters']==reference['parameters']
 assert summary['source_sha256']==reference['source_sha256']
 assert summary['best_epoch_zero_based']==7 and summary['epochs_ran']==28
 assert read(ROOT/'evidence/result_audit.json')['status']=='passed'
+data_root=ROOT/'datasets/cluster40_seed668'
+data_manifest=read(data_root/'manifest.json')
+assert data_manifest['rowspec_sha256']==digest(baseline/'inputs/rowspec.json')
+assert data_manifest['assignments_sha256']==digest(baseline/'assignments.csv')
+spec=read(baseline/'inputs/rowspec.json')
+assignments=list(csv.DictReader((baseline/'assignments.csv').open(encoding='utf-8',newline='')))
+membership={r['balance_row_uid'].removeprefix('catapro:'):r for r in assignments}
+seen=set();groups={}
+for split,entry in data_manifest['files'].items():
+    path=data_root/entry['file'];assert digest(path)==entry['sha256']
+    rows=list(csv.DictReader(path.open(encoding='utf-8',newline='')))
+    ids=[r['author_row_id'] for r in rows]
+    pairs=spec['eval']['test'] if split=='test' else spec[split]
+    assert ids==[uid for _,uid in pairs] and len(ids)==entry['rows']
+    assert not seen.intersection(ids) and len(ids)==len(set(ids));seen.update(ids)
+    groups[split]={r['cluster_id'] for r in rows}
+    assert len(groups[split])==entry['clusters']
+    for row in rows:
+        assignment=membership[row['author_row_id']]
+        assert row['split']==assignment['new_split']==split
+        assert row['cluster_id']==assignment['balance_group']
+assert len(seen)==data_manifest['rows']==27658
+for a,b in [('train','valid'),('train','test'),('valid','test')]:assert not groups[a]&groups[b]
 print(json.dumps(dict(status='passed',frozen_files=counts,python_files=len(python_files),
-    sole_reader_change_verified=True,protocol_unchanged=True,scope='archive integrity, syntax and recorded evidence; no GPU or new numerical verification'),indent=2))
+    sole_reader_change_verified=True,protocol_unchanged=True,dataset_rows=len(seen),dataset_sha_and_split_verified=True,
+    scope='archive integrity, syntax and recorded evidence; no GPU or new numerical verification'),indent=2))

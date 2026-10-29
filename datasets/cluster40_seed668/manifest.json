@@ -1,0 +1,54 @@
+{
+  "dataset": "CataPro original rows, fixed cluster40 seed668",
+  "source_rows_sha256": "a0f15c13c715006513040387a5de600fdffc42481af5830277e683d5a6dc1710",
+  "rowspec_sha256": "e92f55cd7881a2a6615ebabf189bd421ced3e448a357881024501813e97667bc",
+  "assignments_sha256": "721cc57c15ea1e87ea289118868f9d5b9007a9aaa213e45a4d76844e13d08138",
+  "rows": 27658,
+  "columns": [
+    "author_row_id",
+    "fold",
+    "sequence",
+    "smiles",
+    "kcat_s_minus1",
+    "log10_kcat",
+    "split",
+    "cluster_id"
+  ],
+  "files": {
+    "train": {
+      "file": "train.csv",
+      "rows": 21585,
+      "bytes": 11457062,
+      "sha256": "9c251ccf628e5710b883945dc5eadc5a23fb3dd442fcdcf33a0bdca4ae52d794",
+      "clusters": 2995,
+      "first_row_id": "kcat_0",
+      "last_row_id": "kcat_27660",
+      "ordered_ids_sha256": "ff3967f26f4da5179b28247103184d31ebb6a4b912b23630464e48b6702e5e8e"
+    },
+    "valid": {
+      "file": "valid.csv",
+      "rows": 3037,
+      "bytes": 1642758,
+      "sha256": "47cc3a41620e45decf19a6d54a1a7387776052846da79c3a5e64c77c78ea11db",
+      "clusters": 161,
+      "first_row_id": "kcat_3",
+      "last_row_id": "kcat_27550",
+      "ordered_ids_sha256": "765ed45a340b4893232bc89fd4233a930b39b1999aff45ba9a348170c3c027ce"
+    },
+    "test": {
+      "file": "test.csv",
+      "rows": 3036,
+      "bytes": 1541122,
+      "sha256": "36d8306ebfd85b51bec6a610540c962e2c9660a9eed3ef69519e05a294f4dec3",
+      "clusters": 163,
+      "first_row_id": "kcat_128",
+      "last_row_id": "kcat_27593",
+      "ordered_ids_sha256": "7df8f45f33f4a0bac0ea582a74612d88e1bc1405e7d778470efc6a1cfe662a1b"
+    }
+  },
+  "all_original_field_strings_preserved": true,
+  "order_matches_rowspec": true,
+  "row_overlap": false,
+  "cluster_overlap": false,
+  "note": "fold is the original author annotation and is NOT the current split; sequence remains full length; embeddings are external"
+}

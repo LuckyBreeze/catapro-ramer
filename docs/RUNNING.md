@@ -8,6 +8,8 @@
 
 ## 外部文件
 
+实际train/valid/test的序列、SMILES和标签已导出到`datasets/cluster40_seed668/`。原冻结runner仍读取下面的原始特征存储与路径，并未改为读取新CSV；数据导出不包含embedding矩阵。
+
 原服务器父目录：`/share/home/u17015/data/GraphKcat`。
 
 | 外部目录 | 必需文件/用途 |
